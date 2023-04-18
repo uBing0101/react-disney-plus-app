@@ -16,7 +16,7 @@ const Banner = () => {
   const fetchData = async () => {
     // 현재 상영중인 영화 정보를 가져오기( 여러 영화 )
     const response = await axios.get(requests.fetchNowPlaying);
-    console.log("response", response)
+    // console.log("response", response);
 
     // 여러 영화 중 영화 하나의 ID를 가져오기
     const movieId = response.data.results[Math.floor(Math.random() * response.data.results.length)].id
@@ -26,7 +26,7 @@ const Banner = () => {
       params: {append_to_response: "videos"}
     });
 
-    console.log("movieDetail", movieDetail);
+    // console.log("movieDetail", movieDetail);
     setMovie(movieDetail);
   }
 
