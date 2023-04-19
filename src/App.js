@@ -1,11 +1,6 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
-import styled from 'styled-components';
-import requests from './api/request';
 import './App.css';
-import Banner from './components/Banner';
-import Category from './components/Category';
 import Nav from './components/Nav';
-import Row from './components/Row';
 import LoginPage from './pages/LoginPage';
 import MainPage from './pages/MainPage';
 import SearchPage from './pages/SearchPage';
